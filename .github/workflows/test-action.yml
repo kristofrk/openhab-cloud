@@ -1,13 +1,16 @@
-name: Create an SBOM 
+name: create-sbom
 on: push
 jobs:
   myJob:
-   runs-on: ubuntu-latest
-   steps:
-     - name:Cryptosoft-SBOM-generator
-       uses:CryptosoftInc/Dependency-Track-Javascript@1.0.0
-       with:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cryptosoft-SBOM-generator.
+        id: Cryptosoft-SBOM-generator
+        uses: CryptosoftInc/Dependency-Track/Javascript@1.0.0
+        with:
          dt-url: "https://dt-api-kkloeckner-llc.org.dependencytrack.com"
          api-key: "odt_gpkCwq0CJk56IH4KKBiaFZWBpNg9Nkp4"
          project-name: "OpenHAB Cloud"
          project-version: "Latest"
+        
+
