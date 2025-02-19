@@ -1,4 +1,4 @@
-name: Create an SBOM and push to DT
+name: Create an SBOM and push to DT Instance
 on: push
 jobs:
 myJob:
