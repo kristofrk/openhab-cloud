@@ -1,4 +1,4 @@
-name: create-sbom
+name: create-sbom1
 on: push
 jobs:
   myJob:
